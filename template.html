@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 LAYOUT amine mi</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="main-header">
+            <!--
+                a) Kada krenemo skrolati meni treba uvjek biti fiksiran (prikazan) na vrhu stranice
+                b) Meni na mobitelu uglavnom izgleda drugacije (zbog konfiguracije prostora) 
+                c) najefikasnija i najlaksa varijanta jeste da se meni na mobitelu izvlaci sa strane
+                d) razmisliti o mjestu dugmica koji otvara meni na mobilnim stranicama
+            -->
+            <div id="logo">
+                <a href="vjezbica.html">
+                    <img src="" alt="">
+                    <!--
+                        a) logo moze biti vektorski logo (najcesce) u .png formatu
+                        b) logo moze biti rasterski logo u .jpg / .jpeg formatu
+                        c) logo moze biti u vektorskoj varijatni u .svg formatu (Mozemo upravljati css-om i js-om direktno nad njim)
+                        d) logo moze biti video (<video> element) loopovan
+                        e) logo moze biti u .gif formatu
+                    -->
+                </a>
+            </div>
+            <nav id="main-navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">#</a></li>
+                    <li><a href="#">#</a></li>
+                </ul>
+                <!--
+                    a) navigacija je najcesce lista elemenata
+                    b) linkovi se redaju po vaznosti (najbolja varijanta)
+                    c) najcesce imamo home, contact i about us
+                -->
+            </nav>
+        </header>
+        <main id="main-content">
+            <!-- Dobro bi bilo podjeliti sadrzaj na sekcije -->
+            <section>
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="top"></div>
+                <div class="bottom">
+                    <article>
+                        <header class="article-header">
+                            <h2>Naslov....</h2>
+                            <h3>Podnaslov...</h3>
+                        </header>
+                        <div class="article-main">
+                            <p>Neki Tekst...</p>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <footer class="article-footer">
+                            <a href="#">Autor ovog iznad</a>
+                            <a href="#">Datum clanka i vrijeme</a>
+                            <a href="#">Kategorije</a>
+                            <a href="#">Tagovi</a>
+                            <div class="povezani-proizvodi">
+                                <!-- Porizovodi vezani za onaj na kojem se trenutno nalazimo -->
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+                <!-- Podjeliti sekciju u djelove (zavisno od dizajna) -->
+            </section>
+            <section></section>
+            <section></section>
+        </main>
+        <aside id="main-sidebar">
+
+        </aside>
+        <footer id="main-footer">
+            <div id="footer-navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">#</a></li>
+                    <li><a href="#">#</a></li>
+                </ul>
+                <!-- ponovljenja navigacija -->
+            </div>
+            <div id="footer-bottom">
+                <section>
+                    <!--Najvaznije kontakt informacije (po mogucnosti link ka google mapi i linkovi za direktno pozivanje na telefon ili viber / whatsapp, i direktni link za email-->
+                </section>
+                <section>
+                    <!-- Morate imati neki vid bloga/novosit. Ili najcitanije ili najnovije. -->
+                </section>
+                <section>
+                    <!-- Najprodavniji / najbolje ocijenjeni / najvise komentara / nesto najvise... proizvodi -->
+                </section>
+                <section>
+                    <!-- Socijalne mreze, po mogucnosti sa neom vrstom feed-a -->
+                </section>
+                <div id="copyright">
+                    <!-- Informacija o nazivu firme, od kad postoji, ko je napravio stranicu sa linkom, i eventualno cookie policy / privacy policy (dva linka) -->
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
